@@ -1,4 +1,5 @@
-package ma.m2si.TheRepairShop.entity;
+package ma.m2si.TheRepairShop.dao.entity;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

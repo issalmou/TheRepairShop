@@ -1,4 +1,4 @@
-package ma.m2si.TheRepairShop.dto;
+package ma.m2si.TheRepairShop.presentation.dto;
 
 import jakarta.validation.constraints.AssertTrue;
 import jakarta.validation.constraints.NotBlank;

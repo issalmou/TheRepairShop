@@ -1,7 +1,7 @@
 package ma.m2si.TheRepairShop.config;
 
-import ma.m2si.TheRepairShop.entity.*;
-import ma.m2si.TheRepairShop.repository.UserRepository;
+import ma.m2si.TheRepairShop.dao.entity.*;
+import ma.m2si.TheRepairShop.dao.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;

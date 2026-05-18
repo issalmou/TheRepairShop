@@ -1,8 +1,8 @@
-package ma.m2si.TheRepairShop.dto;
+package ma.m2si.TheRepairShop.presentation.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import ma.m2si.TheRepairShop.entity.UserRole;
+import ma.m2si.TheRepairShop.dao.entity.UserRole;
 
 @Data
 @AllArgsConstructor

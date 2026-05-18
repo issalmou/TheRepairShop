@@ -1,4 +1,4 @@
-package ma.m2si.TheRepairShop.controller;
+package ma.m2si.TheRepairShop.presentation.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -6,9 +6,9 @@ import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import ma.m2si.TheRepairShop.dto.LoginRequest;
-import ma.m2si.TheRepairShop.dto.RegisterRequest;
-import ma.m2si.TheRepairShop.entity.User;
+import ma.m2si.TheRepairShop.presentation.dto.LoginRequest;
+import ma.m2si.TheRepairShop.presentation.dto.RegisterRequest;
+import ma.m2si.TheRepairShop.dao.entity.User;
 import ma.m2si.TheRepairShop.service.AuthService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

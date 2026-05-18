@@ -2,12 +2,12 @@ package ma.m2si.TheRepairShop.service;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import ma.m2si.TheRepairShop.dto.ChangePasswordRequest;
-import ma.m2si.TheRepairShop.dto.LoginRequest;
-import ma.m2si.TheRepairShop.dto.RegisterRequest;
-import ma.m2si.TheRepairShop.dto.UpdateProfileRequest;
-import ma.m2si.TheRepairShop.entity.*;
-import ma.m2si.TheRepairShop.repository.UserRepository;
+import ma.m2si.TheRepairShop.presentation.dto.ChangePasswordRequest;
+import ma.m2si.TheRepairShop.presentation.dto.LoginRequest;
+import ma.m2si.TheRepairShop.presentation.dto.RegisterRequest;
+import ma.m2si.TheRepairShop.presentation.dto.UpdateProfileRequest;
+import ma.m2si.TheRepairShop.dao.entity.*;
+import ma.m2si.TheRepairShop.dao.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

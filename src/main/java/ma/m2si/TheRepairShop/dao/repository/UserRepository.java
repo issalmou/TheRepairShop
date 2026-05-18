@@ -1,8 +1,8 @@
-package ma.m2si.TheRepairShop.repository;
+package ma.m2si.TheRepairShop.dao.repository;
 
-import ma.m2si.TheRepairShop.entity.User;
-import ma.m2si.TheRepairShop.entity.UserRole;
-import ma.m2si.TheRepairShop.entity.UserStatus;
+import ma.m2si.TheRepairShop.dao.entity.User;
+import ma.m2si.TheRepairShop.dao.entity.UserRole;
+import ma.m2si.TheRepairShop.dao.entity.UserStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

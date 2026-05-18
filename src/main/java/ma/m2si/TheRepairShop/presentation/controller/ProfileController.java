@@ -1,11 +1,11 @@
-package ma.m2si.TheRepairShop.controller;
+package ma.m2si.TheRepairShop.presentation.controller;
 
 import jakarta.validation.Valid;
-import ma.m2si.TheRepairShop.dto.ChangePasswordRequest;
-import ma.m2si.TheRepairShop.dto.UpdateProfileRequest;
-import ma.m2si.TheRepairShop.entity.Owner;
-import ma.m2si.TheRepairShop.entity.Repairer;
-import ma.m2si.TheRepairShop.entity.User;
+import ma.m2si.TheRepairShop.presentation.dto.ChangePasswordRequest;
+import ma.m2si.TheRepairShop.presentation.dto.UpdateProfileRequest;
+import ma.m2si.TheRepairShop.dao.entity.Owner;
+import ma.m2si.TheRepairShop.dao.entity.Repairer;
+import ma.m2si.TheRepairShop.dao.entity.User;
 import ma.m2si.TheRepairShop.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;

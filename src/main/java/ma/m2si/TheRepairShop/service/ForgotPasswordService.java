@@ -1,7 +1,7 @@
 package ma.m2si.TheRepairShop.service;
 
-import ma.m2si.TheRepairShop.entity.User;
-import ma.m2si.TheRepairShop.repository.UserRepository;
+import ma.m2si.TheRepairShop.dao.entity.User;
+import ma.m2si.TheRepairShop.dao.repository.UserRepository;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

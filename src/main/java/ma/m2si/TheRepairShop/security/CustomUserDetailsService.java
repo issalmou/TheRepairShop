@@ -1,8 +1,8 @@
 package ma.m2si.TheRepairShop.security;
 
-import ma.m2si.TheRepairShop.entity.User;
-import ma.m2si.TheRepairShop.entity.UserRole;
-import ma.m2si.TheRepairShop.repository.UserRepository;
+import ma.m2si.TheRepairShop.dao.entity.User;
+import ma.m2si.TheRepairShop.dao.entity.UserRole;
+import ma.m2si.TheRepairShop.dao.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

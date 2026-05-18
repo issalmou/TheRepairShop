@@ -1,8 +1,8 @@
-package ma.m2si.TheRepairShop.controller;
+package ma.m2si.TheRepairShop.presentation.controller;
 
 import jakarta.validation.Valid;
-import ma.m2si.TheRepairShop.dto.ForgotPasswordRequest;
-import ma.m2si.TheRepairShop.dto.ResetPasswordRequest;
+import ma.m2si.TheRepairShop.presentation.dto.ForgotPasswordRequest;
+import ma.m2si.TheRepairShop.presentation.dto.ResetPasswordRequest;
 import ma.m2si.TheRepairShop.service.ForgotPasswordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

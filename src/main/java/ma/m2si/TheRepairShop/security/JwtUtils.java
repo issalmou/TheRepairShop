@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
-import ma.m2si.TheRepairShop.entity.User;
+import ma.m2si.TheRepairShop.dao.entity.User;
 
 import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
