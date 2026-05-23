@@ -1,0 +1,44 @@
+services:
+  repairshop-db:
+    image: mysql:8.0
+    container_name: repairshop-db-prod
+    environment:
+      MYSQL_ROOT_PASSWORD: root-prod-password-change-me
+      MYSQL_DATABASE: repairshop_db
+      MYSQL_USER: repairshop
+      MYSQL_PASSWORD: repairshop-prod-password-change-me
+    volumes:
+      - repairshop-db-prod-volume:/var/lib/mysql
+    restart: always
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+      interval: 10s
+    networks:
+      - repairshop-network
+
+  repairshop-app:
+    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/therepairshop:latest
+    container_name: repairshop-app-prod
+    ports:
+      - "80:8080" # Map production port 80 to container's 8080 port
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_DATASOURCE_URL=jdbc:mysql://repairshop-db:3306/repairshop_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=repairshop
+      - SPRING_DATASOURCE_PASSWORD=repairshop-prod-password-change-me
+    restart: always
+    depends_on:
+      repairshop-db:
+        condition: service_healthy
+    networks:
+      - repairshop-network
+
+volumes:
+  repairshop-db-prod-volume:
+    driver: local
+
+networks:
+  repairshop-network:
+    driver: bridge
