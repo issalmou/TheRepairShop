@@ -1,0 +1,22 @@
+services:
+  repairshop-db:
+    image: mysql:8.0
+    container_name: repairshop-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: repairshop_db
+      MYSQL_USER: repairshop
+      MYSQL_PASSWORD: repairshop
+    ports:
+      - "3306:3306"
+    volumes:
+      - repairshop-db-volume:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+      interval: 10s
+
+volumes:
+  repairshop-db-volume:
+    driver: local
